@@ -1,0 +1,362 @@
+@font-face {
+  font-family: Be Vietnam;
+  src: url(./fonts/be-vietnam/BeVietnam-SemiBold.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Be Vietnam;
+}
+
+.cta {
+  border-radius: 25px;
+  box-shadow: 0px 15px 15px -10px #ff9f8e;
+  background: #f3603c;
+  padding: 16px 32px;
+  border: none;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 145%;
+  color: white;
+  cursor: pointer;
+}
+/* header */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: clamp(41px, 4vw, 60px);
+  position: relative;
+
+  margin-bottom: clamp(56px, 8vw, 125px);
+
+  .rect {
+    max-width: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .container {
+    width: 1110px;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo-img {
+      width: clamp(109.35px, 10vw, 150px);
+      /* max-width: 40%; */
+    }
+
+    nav {
+      display: flex;
+      gap: 32px;
+
+      a {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 145%;
+        color: #242d52;
+
+        @media screen and (max-width: 992px) {
+          /* tablet and mobile Design */
+          display: none;
+        }
+      }
+    }
+
+    button {
+      @media screen and (max-width: 992px) {
+        /* tablet and mobile Design */
+        display: none;
+      }
+    }
+
+    .tap {
+      width: 25px;
+
+      display: none;
+      @media screen and (max-width: 992px) {
+        /* tablet and mobile Design */
+        display: flex;
+      }
+    }
+  }
+}
+
+/* hero section */
+#hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 132px;
+  @media screen and (max-width: 992px) {
+    /* tablet Design*/
+    margin-bottom: 96px;
+  }
+
+  @media screen and (max-width: 767px) {
+    /*  mobile Design */
+    margin-bottom: 112px;
+  }
+
+  .container {
+    width: 1110px;
+    max-width: 90%;
+    display: flex;
+
+    @media screen and (max-width: 992px) {
+      /* tablet and mobile Design */
+      flex-direction: column-reverse;
+    }
+
+    .left {
+      width: 50%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      @media screen and (max-width: 992px) {
+        /* tablet and mobile Design */
+        width: 100%;
+        justify-content: center;
+      }
+
+      .left-container {
+        width: 445px;
+        display: flex;
+        flex-direction: column;
+        height: 388px;
+
+        @media screen and (max-width: 992px) {
+          /* tablet and mobile Design */
+          width: 100%;
+          text-align: center;
+          align-items: center;
+          gap: 24px;
+          height: auto;
+        }
+
+        h1 {
+          font-weight: 700;
+          font-size: 56px;
+          line-height: 114.99999999999999%;
+          letter-spacing: -1px;
+          color: #242d52;
+          margin-bottom: 16px;
+
+          @media screen and (max-width: 992px) {
+            /* tablet and mobile Design */
+            font-weight: 700;
+            font-size: 47px;
+            line-height: 110.00000000000001%;
+            letter-spacing: -0.75px;
+          }
+
+          @media screen and (max-width: 767px) {
+            /* tablet and mobile Design */
+            font-weight: 700;
+            font-size: 37px;
+            line-height: 110.00000000000001%;
+            letter-spacing: -0.75px;
+          }
+        }
+
+        p {
+          opacity: 50.25%;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 163%;
+          letter-spacing: 0px;
+          color: #242d52;
+          padding-right: 6rem;
+          text-align: justify;
+          margin-bottom: 40px;
+
+          @media screen and (max-width: 992px) {
+            /* tablet and mobile Design */
+            padding: 0;
+            text-align: center;
+            width: 71%;
+            margin-bottom: 24px;
+          }
+
+          @media screen and (max-width: 767px) {
+            /* tablet and mobile Design */
+            padding: 0;
+            text-align: center;
+            width: 100%;
+            font-size: 15px;
+            margin-bottom: 32px;
+          }
+        }
+
+        button {
+          width: 137px;
+        }
+      }
+    }
+
+    .right {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      @media screen and (max-width: 992px) {
+        /* tablet and mobile Design */
+        width: 100%;
+        justify-content: center;
+      }
+
+      .top {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 260px;
+          height: 235px;
+
+          @media screen and (max-width: 767px) {
+            /* mobile  Design */
+            width: 153px;
+            height: 139px;
+          }
+        }
+      }
+
+      .bottom {
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 260px;
+          height: 235px;
+
+          @media screen and (max-width: 767px) {
+            /* mobile  Design */
+            width: 153px;
+            height: 139px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#second {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .container {
+    width: 1110px;
+    max-width: 90%;
+    display: flex;
+
+    @media screen and (max-width: 992px) {
+      /* tablet and mobile Design */
+      flex-direction: column;
+    }
+
+    .left {
+      width: 50%;
+      .left-container {
+        width: 445px;
+
+        h2 {
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 110.00000000000001%;
+          letter-spacing: -0.75px;
+          color: #242d52;
+          margin-bottom: 24px;
+        }
+
+        p {
+          opacity: 0.5;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 163%;
+          letter-spacing: 0px;
+          color: #242d52;
+        }
+      }
+    }
+
+    .right {
+      width: 50%;
+
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      .card {
+        display: flex;
+        width: 100%;
+
+        .number {
+          width: 52%;
+
+          p {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 145%;
+            letter-spacing: 0px;
+            text-align: center;
+            padding: 8px 24px;
+            background: #f3603c;
+            color: white;
+            border-radius: 39px;
+            width: 67px;
+          }
+        }
+
+        .text {
+          h3 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 145%;
+            letter-spacing: 0px;
+            color: #242d52;
+            padding-bottom: 8px;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 163%;
+            letter-spacing: 0px;
+            opacity: 0.5;
+            color: #242d52;
+          }
+        }
+      }
+    }
+  }
+
+  .img-15 {
+    display: none;
+    @media screen and (max-width: 992px) {
+      /* tablet and mobile Design */
+      display: flex;
+      position: absolute;
+      right: 0;
+    }
+  }
+  .img-12 {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    bottom: -406px;
+
+    @media screen and (max-width: 992px) {
+      /* tablet and mobile Design */
+      display: none;
+    }
+  }
+}
