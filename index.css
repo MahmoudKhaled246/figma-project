@@ -354,10 +354,19 @@ header {
           display: flex;
           align-items: center;
           gap: 24px;
+          margin-bottom: 8px;
 
           @media screen and (max-width: 992px) {
             /* tablet and mobile Design */
             background-color: #fff0ec;
+            border-top-left-radius: 39px;
+            border-bottom-left-radius: 39px;
+            gap: 32px;
+          }
+
+          @media screen and (max-width: 767px) {
+            /* mobile Design */
+            gap: 16px;
           }
 
           h3 {
@@ -366,7 +375,6 @@ header {
             line-height: 145%;
             letter-spacing: 0px;
             color: #242d52;
-            padding-bottom: 8px;
           }
 
           p {
