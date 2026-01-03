@@ -1,6 +1,6 @@
 @font-face {
   font-family: Be Vietnam;
-  src: url(./fonts/be-vietnam/BeVietnam-SemiBold.ttf);
+  src: url(./fonts/be-vietnam/BeVietnam-Regular.ttf);
 }
 
 * {
@@ -253,6 +253,18 @@ header {
   display: flex;
   justify-content: center;
   position: relative;
+  margin-bottom: 149px;
+
+  @media screen and (max-width: 992px) {
+    /* tablet Design */
+    margin-bottom: 96px;
+  }
+
+  @media screen and (max-width: 767px) {
+    /* tablet Design */
+    margin-bottom: 112px;
+  }
+
   .container {
     width: 1110px;
     max-width: 90%;
@@ -261,12 +273,34 @@ header {
     @media screen and (max-width: 992px) {
       /* tablet and mobile Design */
       flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 100%;
+      gap: 32px;
     }
 
     .left {
       width: 50%;
+      @media screen and (max-width: 992px) {
+        /* tablet and mobile Design */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
       .left-container {
         width: 445px;
+
+        @media screen and (max-width: 992px) {
+          /* tablet Design */
+          text-align: center;
+          width: 500px;
+        }
+
+        @media screen and (max-width: 767px) {
+          /* mobile Design */
+          text-align: center;
+          width: 332px;
+        }
 
         h2 {
           font-weight: 700;
@@ -284,23 +318,56 @@ header {
           line-height: 163%;
           letter-spacing: 0px;
           color: #242d52;
+
+          @media screen and (max-width: 767px) {
+            /* mobile Design */
+            font-size: 13px;
+          }
         }
       }
     }
 
     .right {
       width: 50%;
-
       display: flex;
       flex-direction: column;
       gap: 40px;
 
+      @media screen and (max-width: 992px) {
+        /* tablet and mobile Design */
+        width: 100%;
+        padding-left: 32px;
+      }
+
+      @media screen and (max-width: 727px) {
+        /* tablet and mobile Design */
+        width: 100%;
+        padding-left: 16px;
+      }
+
       .card {
         display: flex;
+        flex-direction: column;
         width: 100%;
 
-        .number {
-          width: 52%;
+        .top {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+
+          @media screen and (max-width: 992px) {
+            /* tablet and mobile Design */
+            background-color: #fff0ec;
+          }
+
+          h3 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 145%;
+            letter-spacing: 0px;
+            color: #242d52;
+            padding-bottom: 8px;
+          }
 
           p {
             font-weight: 700;
@@ -316,16 +383,19 @@ header {
           }
         }
 
-        .text {
-          h3 {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 145%;
-            letter-spacing: 0px;
-            color: #242d52;
-            padding-bottom: 8px;
+        .bottom {
+          display: flex;
+          padding-left: 91px;
+
+          @media screen and (max-width: 992px) {
+            /* tablet and mobile Design */
+            padding: 0px 64px 0px 0px;
           }
 
+          @media screen and (max-width: 767px) {
+            /* tablet and mobile Design */
+            padding: 0px;
+          }
           p {
             font-weight: 400;
             font-size: 16px;
@@ -333,6 +403,10 @@ header {
             letter-spacing: 0px;
             opacity: 0.5;
             color: #242d52;
+            @media screen and (max-width: 767px) {
+              /* mobile Design */
+              font-size: 13px;
+            }
           }
         }
       }
@@ -341,11 +415,22 @@ header {
 
   .img-15 {
     display: none;
+    max-width: 25%;
+
     @media screen and (max-width: 992px) {
-      /* tablet and mobile Design */
+      /* tablet Design */
       display: flex;
       position: absolute;
       right: 0;
+      top: -21rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      /* mobile Design */
+      display: flex;
+      position: absolute;
+      right: 0;
+      top: -16rem;
     }
   }
   .img-12 {
@@ -357,6 +442,129 @@ header {
     @media screen and (max-width: 992px) {
       /* tablet and mobile Design */
       display: none;
+    }
+  }
+}
+
+#third {
+  margin-bottom: 180px;
+  @media screen and (max-width: 992px) {
+    /* tablet and mobile Design */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 95px;
+  }
+  @media screen and (max-width: 767px) {
+    /* tablet and mobile Design */
+    margin-bottom: 86px;
+  }
+
+  .container {
+    width: 100%;
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      /* tablet Design */
+      width: 559px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    h2 {
+      font-weight: 700;
+      font-size: 40px;
+
+      line-height: 110.00000000000001%;
+      letter-spacing: -0.75px;
+      text-align: center;
+      margin-bottom: 100px;
+
+      @media screen and (max-width: 767px) {
+        /* tablet and mobile Design */
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 140%;
+        letter-spacing: 0px;
+        text-align: center;
+
+        margin-bottom: 66px;
+      }
+      color: #242d52;
+    }
+
+    .carousel {
+      width: 100%;
+      margin-bottom: 48px;
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+
+      @media screen and (max-width: 992px) {
+        /* tablet and mobile Design */
+        margin-bottom: 32px;
+      }
+      .client {
+        flex: 0 0 560px;
+        height: 220px;
+        background: #fafafa;
+        position: relative;
+        padding-top: 60px;
+        text-align: center;
+
+        @media screen and (max-width: 767px) {
+          /* mobile Design */
+          flex: 0 0 100%;
+          padding-left: 38.5px;
+          padding-right: 38.5px;
+        }
+
+        .client-photo {
+          position: absolute;
+          width: 72px;
+          height: 72px;
+          top: -36px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        h3 {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 145%;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #242d52;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 163%;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #242d52;
+          opacity: 0.5;
+        }
+      }
+
+      .one,
+      .three {
+        @media screen and (max-width: 992px) {
+          /* tablet and mobile Design */
+          display: none;
+        }
+      }
+    }
+
+    .dots {
+      display: none;
+
+      @media screen and (max-width: 992px) {
+        /* tablet and mobile Design */
+        display: flex;
+        justify-content: center;
+        margin-bottom: 32px;
+      }
     }
   }
 }
