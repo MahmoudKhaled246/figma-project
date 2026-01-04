@@ -281,6 +281,7 @@ header {
     width: 1110px;
     max-width: 90%;
     display: flex;
+    overflow-x: hidden;
 
     @media screen and (max-width: 992px) {
       /* tablet and mobile Design */
