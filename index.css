@@ -736,6 +736,7 @@ footer {
   background-color: #1d1e25;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   @media screen and (max-width: 992px) {
     /* tablet and mobile Design */
     padding: 47.64px 159.5px;
